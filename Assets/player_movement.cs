@@ -5,16 +5,18 @@ using UnityEngine;
 public class player_movement : MonoBehaviour
 {   
     [SerializeField] private Rigidbody rb;
-    [SerializeField] private float jumpforce = 200;
     // Start is called before the first frame update
     void Start(){
+        
 
     }
     void Update(){
-        var speed = 15;
+        var speed = 8;
         var speed_vector = new Vector3(speed, 0 , 0);
         var forward = new Vector3(0,0,3);
-        var vel = new Vector3(Input.GetAxis("Horizontal")*speed, 0 , Input.GetAxis("Vertical")*speed);
+        var jumpforce = 600;
+        
+        var vel = new Vector3(Input.GetAxis("Horizontal")*speed, 0 , 0); // ali Input.GetAxis("Vertical")*speed za zadnjo komponento - premikanje naprej in nazaj
         vel.y = rb.velocity.y;
         rb.velocity = (vel) + forward;
 

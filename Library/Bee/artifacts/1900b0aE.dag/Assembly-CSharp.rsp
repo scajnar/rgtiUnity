@@ -346,6 +346,7 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/follow_player.cs"
 "Assets/player_movement.cs"
+"Assets/SectionGenerator.cs"
 -langversion:9.0
 
 /deterministic
