@@ -2,7 +2,6 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
 public class CollectCoin : MonoBehaviour
 {
     public static System.DateTime Now { get; }
@@ -12,6 +11,7 @@ public class CollectCoin : MonoBehaviour
 
     void OnTriggerEnter(Collider other) {
         // coinFX.Play();
+        CollectItemsCounter.powerup_count += 1;
         this.gameObject.SetActive(false);
         this.IncreasePlayerSpeed(System.DateTime.UtcNow);
         Invoke(nameof(ResetPlayerSpeed), 3);

@@ -345,6 +345,7 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/Other_scripts/CollectCoin.cs"
+"Assets/Other_scripts/CollectItemsCounter.cs"
 "Assets/Other_scripts/RotateObject.cs"
 "Assets/Other_scripts/SectionGenerator.cs"
 "Assets/Player_scripts/FollowPlayer.cs"
