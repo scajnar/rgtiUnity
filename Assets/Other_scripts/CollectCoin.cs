@@ -19,7 +19,7 @@ public class CollectCoin : MonoBehaviour
 
     void IncreasePlayerSpeed(System.DateTime pickup_time)
     {
-        Debug.Log("Pickup time je"+pickup_time);
+        Debug.Log("Pickup time je "+pickup_time);
         this.powerup_time = System.DateTime.UtcNow;
         GameObject.Find("Player").GetComponent<PlayerMovement>().speed_forward += 3;
         GameObject.Find("Player").GetComponent<PlayerMovement>().jumpforce = 250;
