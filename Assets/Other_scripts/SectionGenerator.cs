@@ -13,7 +13,7 @@ public class SectionGenerator : MonoBehaviour
         secNum = 0; //ko je vec kot 1 section -> Random.Range(0, stevilo_sectionov);
         Instantiate(section[secNum], new Vector3(0,0,zPos), Quaternion.identity);
         zPos += 40; //+Z pozicija kam se postavi vsaki naslednji generirani section
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(5);
         creatingSection = false;
     }
 
