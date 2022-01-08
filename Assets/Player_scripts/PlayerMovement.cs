@@ -20,11 +20,11 @@ public class PlayerMovement : MonoBehaviour
         vel.y = rb.velocity.y;
         rb.velocity = (vel) + forward;
 
-        if(Input.GetKeyDown(KeyCode.Space) && this.gameObject.transform.position.y <= 5 && canJump == true){
+        if(Input.GetKeyDown(KeyCode.Space) && this.gameObject.transform.position.y <= 10 && canJump == true){
             rb.AddForce(Vector3.up * jumpforce);
             jumpFX.Play();
             canJump = false;
-            Invoke("Cooldown", 0.2f);
+            Invoke("Cooldown", 0.05f);
 
         }
     }

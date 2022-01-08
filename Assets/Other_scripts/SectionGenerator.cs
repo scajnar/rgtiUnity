@@ -13,7 +13,7 @@ public class SectionGenerator : MonoBehaviour
         //secNum = 0; //ko je vec kot 1 section -> Random.Range(0, stevilo_sectionov);
 
         //secNum = 0;
-        secNum = Random.Range(0, 3);
+        secNum = Random.Range(0, 4);
         
         Debug.Log(section.Length);
         Instantiate(section[secNum], new Vector3(0,0,zPos), Quaternion.identity);

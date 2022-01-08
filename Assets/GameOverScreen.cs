@@ -20,6 +20,7 @@ public class GameOverScreen : MonoBehaviour
 
     public void MenuButton()
     {
+        CollectItemsCounter.powerup_count = 0;
         SceneManager.LoadScene("StartGame");
     }
 }
