@@ -11,9 +11,9 @@ public class SectionGenerator : MonoBehaviour
     public int stevilo_sectionov = 1; //ena manj kot jih dejansko je
 
     IEnumerator GenerateSection(){
-        secNum = 1; //ko je vec kot 1 section -> Random.Range(0, stevilo_sectionov);
+        secNum = 2; //ko je vec kot 1 section -> Random.Range(0, stevilo_sectionov);
 
-        //secNum = Random.Range(0, stevilo_sectionov);
+        //secNum = Random.Range(0, 3);
 
         Instantiate(section[secNum], new Vector3(0,0,zPos), Quaternion.identity);
         zPos += 40; //+Z pozicija kam se postavi vsaki naslednji generirani section
