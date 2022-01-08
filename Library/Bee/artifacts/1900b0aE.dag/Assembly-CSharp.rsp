@@ -360,6 +360,7 @@
 "Assets/Player_scripts/FollowPlayer.cs"
 "Assets/Player_scripts/PlayerCollision.cs"
 "Assets/Player_scripts/PlayerMovement.cs"
+"Assets/StartGameScreen.cs"
 -langversion:9.0
 
 /deterministic
