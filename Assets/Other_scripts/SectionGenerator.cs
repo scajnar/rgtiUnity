@@ -12,8 +12,10 @@ public class SectionGenerator : MonoBehaviour
     IEnumerator GenerateSection(){
         //secNum = 0; //ko je vec kot 1 section -> Random.Range(0, stevilo_sectionov);
 
+        //secNum = 0;
         secNum = Random.Range(0, 3);
-
+        
+        Debug.Log(section.Length);
         Instantiate(section[secNum], new Vector3(0,0,zPos), Quaternion.identity);
         
         zPos += 40; //+Z pozicija kam se postavi vsaki naslednji generirani section
@@ -28,4 +30,13 @@ public class SectionGenerator : MonoBehaviour
         StartCoroutine(GenerateSection());
         }
     }
+
+    void Start(){
+        section = new GameObject[4];
+        section[0] = GameObject.Find("Section1");
+        section[1] = GameObject.Find("Section2");
+        section[2] = GameObject.Find("Section3");
+        section[3] = GameObject.Find("Section4");
+    }
+
 }

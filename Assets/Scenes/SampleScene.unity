@@ -1231,7 +1231,7 @@ GameObject:
   m_Component:
   - component: {fileID: 186017290}
   m_Layer: 0
-  m_Name: Section 2
+  m_Name: Section2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4528,7 +4528,7 @@ GameObject:
   - component: {fileID: 524469426}
   - component: {fileID: 524469427}
   m_Layer: 0
-  m_Name: Section
+  m_Name: Section1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6907,7 +6907,7 @@ GameObject:
   m_Component:
   - component: {fileID: 802150909}
   m_Layer: 0
-  m_Name: Section 3
+  m_Name: Section3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9844,6 +9844,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   section:
   - {fileID: 524469425}
+  - {fileID: 186017289}
+  - {fileID: 802150908}
+  - {fileID: 1358228999}
   zPos: 2
   creatingSection: 0
   secNum: 0
@@ -10930,7 +10933,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1358229000}
   m_Layer: 0
-  m_Name: Section 4
+  m_Name: Section4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
