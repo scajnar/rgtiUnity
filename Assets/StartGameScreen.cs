@@ -13,6 +13,5 @@ public class StartGameScreen : MonoBehaviour
 
     public void StartGame(){
         SceneManager.LoadScene("SampleScene");
-        //gameObject.SetActive(false);
     }
 }

@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {   
+
+    public AudioSource jumpFX;
     [SerializeField] private Rigidbody rb;
     // Start is called before the first frame update
     [System.NonSerialized] public int jumpforce = 300;
@@ -20,6 +22,7 @@ public class PlayerMovement : MonoBehaviour
 
         if(Input.GetKeyDown(KeyCode.Space) && this.gameObject.transform.position.y <= 5 && canJump == true){
             rb.AddForce(Vector3.up * jumpforce);
+            jumpFX.Play();
             canJump = false;
             Invoke("Cooldown", 0.2f);
 
