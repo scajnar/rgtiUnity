@@ -4,13 +4,14 @@ using System.Collections.Generic;
 using UnityEngine;
 public class CollectCoin : MonoBehaviour
 {
+    public AudioSource powerupFX;
     public static System.DateTime Now { get; }
     [System.NonSerialized] public bool powerup = false;
     [System.NonSerialized] private System.DateTime powerup_time;
     
 
     void OnTriggerEnter(Collider other) {
-        // coinFX.Play();
+        powerupFX.Play();
         CollectItemsCounter.powerup_count += 1;
         this.gameObject.SetActive(false);
         this.IncreasePlayerSpeed(System.DateTime.UtcNow);
@@ -22,7 +23,7 @@ public class CollectCoin : MonoBehaviour
         Debug.Log("Pickup time je "+pickup_time);
         this.powerup_time = System.DateTime.UtcNow;
         GameObject.Find("Player").GetComponent<PlayerMovement>().speed_forward += 3;
-        GameObject.Find("Player").GetComponent<PlayerMovement>().jumpforce = 250;
+        GameObject.Find("Player").GetComponent<PlayerMovement>().jumpforce = 340;
         // powerup = true;
         // Debug.Log("V powerup == false, this.powerup_time je "+this.powerup_time);
 
@@ -31,7 +32,7 @@ public class CollectCoin : MonoBehaviour
     void ResetPlayerSpeed()
     {
         GameObject.Find("Player").GetComponent<PlayerMovement>().speed_forward = 3;
-        GameObject.Find("Player").GetComponent<PlayerMovement>().jumpforce = 210;
+        GameObject.Find("Player").GetComponent<PlayerMovement>().jumpforce = 300;
 
     }
 }

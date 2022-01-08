@@ -6,16 +6,17 @@ public class CollectShield : MonoBehaviour
 {
     public GameObject orbit;
     public bool shield;
+    public AudioSource powerupFX;
     private Collider other;
     public static System.DateTime Now { get; }
     [System.NonSerialized] private System.DateTime powerup_time;
     void OnTriggerEnter(Collider other) {
-        // shieldFX.Play();
+        powerupFX.Play();
         this.other = other;
         CollectItemsCounter.powerup_count += 1;
         this.gameObject.SetActive(false);
         this.EnableShield(System.DateTime.UtcNow);
-        Invoke(nameof(ResetPlayerShield), 3);
+        Invoke(nameof(ResetPlayerShield), 5);
     }
 
     void EnableShield(System.DateTime pickup_time)

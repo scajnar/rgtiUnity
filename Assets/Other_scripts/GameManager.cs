@@ -26,7 +26,7 @@ public class GameManager : MonoBehaviour
 
     void feedDog()
     {
-        Debug.Log("Dog fed");
+        //Debug.Log("Dog fed");
         GameOverScreen.Setup((int)(player.position.z));
     }
 

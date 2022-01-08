@@ -8,8 +8,9 @@ public class CollectSizeDown : MonoBehaviour
     private Collider other;
     public static System.DateTime Now { get; }
     [System.NonSerialized] private System.DateTime powerup_time;
+    public AudioSource powerupFX;
     void OnTriggerEnter(Collider other) {
-        // sizeFX.Play();
+        powerupFX.Play();
         this.other = other;
         CollectItemsCounter.powerup_count += 1;
         this.gameObject.SetActive(false);
