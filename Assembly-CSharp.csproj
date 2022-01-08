@@ -41,6 +41,7 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Other_scripts\DestroyObject.cs" />
      <Compile Include="Assets\Other_scripts\CrashCollision.cs" />
      <Compile Include="Assets\Player_scripts\PlayerMovement.cs" />
      <Compile Include="Assets\Other_scripts\CollectSizeDown.cs" />
@@ -57,7 +58,6 @@
      <Compile Include="Assets\Other_scripts\CollectShield.cs" />
      <Compile Include="Assets\Player_scripts\FollowPlayer.cs" />
      <Compile Include="Assets\Other_scripts\OrbitPlayer.cs" />
-     <Compile Include="Assets\Other_scripts\DestroyObject.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />

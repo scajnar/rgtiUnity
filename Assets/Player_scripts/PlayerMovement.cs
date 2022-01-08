@@ -24,7 +24,7 @@ public class PlayerMovement : MonoBehaviour
             rb.AddForce(Vector3.up * jumpforce);
             jumpFX.Play();
             canJump = false;
-            Invoke("Cooldown", 0.05f);
+            Invoke("Cooldown", 0f);
 
         }
     }
